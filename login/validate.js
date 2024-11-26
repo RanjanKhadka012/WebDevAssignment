@@ -39,4 +39,4 @@ function validateInput() {
 
 // Add event listeners to input fields
 document.getElementById("email").addEventListener("input", validateInput);
-document.getElementById("password").addEventListener("input", validateInput);
+document.getElementById("pWord").addEventListener("input", validateInput);

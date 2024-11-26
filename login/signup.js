@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const signupForm = document.getElementById('signupForm');
+    const signupForm = document.getElementById('signUp');
     const userNameInput = document.getElementById('userName');
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('pWord');
@@ -8,9 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Utility function to validate email
     const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
-
     // Signup form submission
-    signupForm.addEventListener('submit', (e) => {
+    signupForm.addEventListener('onclick', (e) => {
         e.preventDefault();
 
         const userName = userNameInput.value.trim();
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             passwordError.textContent = 'Password must be at least 6 characters.';
             return;
         }
-
+        console.log('Signup successful!');
         const userData = { userName, email, password };
         localStorage.setItem('user', JSON.stringify(userData)); // Save to localStorage
         alert('Signup successful! You can now log in.');
