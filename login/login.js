@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (storedUserData.email === email && storedUserData.password === password) {
         alert("Login successful!");
         // Redirect to a new page
-        window.location.href = "dashboard.html"; // Replace with the actual destination page
+        window.location.href = "../website/index.html"; // Replace with the actual destination page
       } else {
         alert("Invalid email or password. Please try again.");
       }

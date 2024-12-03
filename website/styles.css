@@ -1,0 +1,766 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    width: 100vw !important;
+    overflow-x: hidden;
+} */
+.container{
+    height: 90vh;
+    width: 100vw;
+    background-size: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+.Forest{
+    font-size: 2em;
+    color: #dadada;
+    font-weight: 900;
+    padding-left: 1.5em;
+    padding-top: 0.7em;
+    position: absolute;
+}
+.container .words a{
+    text-decoration: none;
+    color: #dadada;
+    margin: 0.5em;
+    font-size: 1.3em;
+    font-weight: 900;
+    transition: ease-in-out 0.8s;
+}
+.words a:hover{
+    color:rgba(62, 92, 17, 0.864) !important;
+}
+
+.container .words{
+    position: absolute;
+    right: 0.5em;
+    padding-left: 1.5em;
+    padding-top: 3em;
+    
+}
+
+/* color for home icon */
+.home{
+    color: rgba(62, 92, 17, 0.864) !important; 
+}
+
+/* for texts around the home picture */
+.center-photo{
+    color: #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    letter-spacing: 0px;
+    padding: 0em 4em;
+    line-height: 27px;
+    text-align: center;
+    margin: auto 20%;
+}
+
+.center-photo h2{
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+.button{
+    display: flex;
+    position: absolute;
+    width: 15rem;
+    justify-content: space-between;
+    bottom: 10rem;
+    left: 39rem;
+
+}
+.button button{
+    width: 8em;
+    height: 3rem;
+    border-radius: 40px;
+    border: 0.3em solid white;
+    transition: ease-in-out 0.5s;
+    background-color: #a3c062;
+}
+.aboutus{
+    background-color: #ffffff !important;
+    color:#a3c963
+}
+.button button:hover{
+    color: white;
+    background-color: black !important;
+}
+.about{
+    /* justify-content: center; */
+    /* text-align: center; */
+    font-family: 'Playfair Display', serif !important;
+    position: relative;
+}
+.about .top{
+    text-align: center;
+}
+.about .top h3,h2{
+    margin-top: 1.7rem;
+} 
+
+.about .top p{
+    margin: auto 20rem;
+    margin-top: 0.5rem;
+}
+
+.about .top h3{
+    color: #a3c062;
+}
+
+.about .top h2{
+    font-weight: 700;
+}
+
+.about .bottom{
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom .img{
+    display: block;
+}
+.bottom .words{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-left: 2rem;
+    width: 40%;
+}
+.bottom .words h3{
+    color: #a3c062;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.bottom .words h2{
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.bottom .words p{
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.img2{
+    position: absolute;
+    bottom: 7%;
+    right: 20%;
+}
+
+.container2{
+    width: 100vw;
+    height: 78vh;
+}
+
+.container2{
+    background-image: url(media/s1.jpg);
+
+
+}
+.container2 .top{
+    display: flex;
+    margin:1rem 10rem 1rem;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.container2 .top .left_box{
+    width: 48%;
+}
+.container2 .top .right_box{
+    padding-top: 0;
+    align-items: center;
+    width: 48%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.container2 .top .right_box h2{
+    color: #a3c963;
+}
+.container2 .top .right_box h1{
+    font-weight: 400;
+}
+
+
+
+/* for box */
+.container2 .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    
+}
+.container2 .box .b{
+    width: 27%;
+    height: 13rem;
+    margin: 15px;
+    background-color: white;
+    border: white 0px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+.container2 .box .b:hover{
+    background-color: rgb(202, 202, 202);
+   
+}
+
+.box .b i{
+   margin-top: 25px;
+   /* margin-left: 150px; */
+   font-size: 25px;
+   text-align: center;
+   
+}
+.box .b .p{
+    text-align: center;
+    color: rgb(160, 192, 77);
+    margin-top: 22px;
+    font-size: 20px;
+    
+}
+.b  .pa{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(152, 152, 152);
+    font-size: 13px;
+    
+}
+
+/* for eords after text */
+.container3{
+    flex-direction: wrap;
+
+}
+.container3 .top{
+    display: flex;
+    margin: 1rem 10rem 1rem;
+    justify-content: space-around;
+} 
+
+.container3 .top .box{
+    width: 48%;
+}
+.container3 .top #left{
+    text-align: right;
+    align-items: center;
+}
+.container3 .top .box h2{
+    color: #a3c963;
+}
+.container3 .top .box h1{
+    font-weight: 400;
+}
+.container3 .top .box p{
+    margin-top: 2rem;
+}
+
+
+
+.vertical_line{
+    height: 25vh;
+    margin-top: 3rem;
+    width: 100vw;
+    background-color: greenyellow;
+}
+
+
+
+
+/* The green vertical line */
+.vertical_line{
+    width: 100%;
+    background-color:rgb(160, 192, 77);
+    height: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+   
+}
+.vertical_line .part{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.vertical_line .part i{
+    font-size: 25px;
+    margin-left: -6px;
+}
+.vertical_line .part .p1{
+    margin-top: 9px;
+    font-size: 20px;
+    margin-left: -8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.vertical_line .part .p2{
+    margin-top: 10px;
+    color: black;
+    font-size: 22px;
+    margin-left: -10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+.hardwork{
+    width: 100vw;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+ 
+}
+.hardwork .p1 p{
+    /* width:500px; */
+    margin-top: 30px;
+    /* font-size: 17px; */
+    letter-spacing: 1px;
+    color: rgb(103, 103, 103);
+    text-align: right;
+}
+.hardwork .hardw1{
+    margin-left: 35px;
+    margin-top: 16px;
+}
+.hardw1 .pa{
+    font-size: 20px;
+    color: rgb(160, 192, 77);
+}
+.hardw1 .pb{
+    font-size: 30px;
+    /* margin-left: 285px; */
+    margin-top: 5px;
+    margin-left: -1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+.container5{
+
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 170px;
+}
+.container5 .box1{
+    width: 360px;
+    height: 400px;
+    margin-left: 120px;
+    margin-top: 54px;
+}
+.container5 .box1 img{
+    width: 100%;
+    height: 100%;
+
+}
+.container5 .box2{
+    width:60%;
+    height: 440px;
+    margin-left:10px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 57px;
+}
+.container5 .box2 .subbox, .container5 .box2 .subbox1{
+    border: rgb(255, 255, 255) 1px solid;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 580px;
+    height: 119px;
+    margin-left: 55px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container5 .box2 .subbox1{
+    width: 560px;
+    margin-left:75px ;
+    display: flex;
+    flex-wrap: wrap;
+   /* align-items: center; */
+}
+.subbox .icon i, .subbox1 .icon i{
+    font-size: 28px;
+    margin-top: 43px;
+    margin-left: 63px;
+}
+.subbox .text1{
+    margin-left: 120px;
+    margin-top: 17px;
+}
+.subbox1 .text1{
+    margin-left: 120px;
+    margin-top: 17px;
+}
+.text1 .h{
+    color: rgb(160, 192, 77);
+    font-size: 20px;
+}
+.text1 .h2{
+    margin-top:17px;
+    color: rgb(103, 103, 103);
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+.container6{
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/b2.jpg);
+    
+    height: 70vh;
+    text-align: center;
+
+}
+.container6 .galleryintro .p{
+    padding-top: 2rem;
+    font-size: 2rem;
+    display: flex;
+}
+
+
+.container6 .card{
+    width: 100%;
+    color:rgb(122, 147, 59);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    margin-right: 14px;
+    margin-top: 10px;
+
+
+}
+.container6 .card .boxes{
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: white;
+    width:20%;
+    height: 330px;
+    
+}
+
+.boxes .cash{
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+.boxes .p1{
+    margin-top:20px;
+    text-align: center;
+    font-size: 24px;
+}
+.boxes .p2{
+    text-align: center;
+}
+.boxes .p2 p{
+    justify-content: center;
+    width: 90px;
+    margin-top: 28px;
+    margin-left: 70px;
+    line-height: 29px;
+    color: rgb(156, 156, 156);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.boxes button{
+    height: 40px;
+    border: 1.5px rgb(255, 248, 248) solid;
+    border-radius: 50px;
+    width: 113px;
+    margin: 2px auto;
+    
+    background-color: rgb(160, 192, 77);
+    
+}
+.boxes button a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.boxes button:hover{
+    background-color: black;
+}
+.boxes button a:hover{
+    color: white;
+}
+.boxes .cash .c1{
+   margin-top:8px;
+   margin-right: 3px;
+
+}
+.boxes .cash .c2{
+    font-size: 25px;
+    color: rgb(160, 192, 77);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boxes .cash .c3{
+    margin-top:8px ;
+    margin-left: 6px;
+}
+
+
+
+
+.images{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    margin-left: -3px;
+}
+.images .box{
+    margin-top: 60px;
+    width: 19%;
+    height: 300px;
+    text-align:center;    
+}
+.images img{
+    width: 100%;
+    height: 100%;
+}
+.images .box .name{
+
+ margin-top: 20px;
+ color: rgb(160, 192, 77);
+ font-size: 20px;
+}
+.images .box .pos{
+ margin-top: 7px;
+ letter-spacing: 0.5px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.images .box .icons{
+    margin-top: 20px;
+
+}
+.images .box .icons a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 2px;
+    background-color: black;
+}
+.icons a:hover i{
+   color: rgb(160, 192, 77) !important;
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.block{
+width: 100%;
+height: 20vh;
+background-color: rgb(160, 192, 77);
+text-align: center;
+}
+.block a i{
+  margin-top: 20px;
+  font-size: 26px;
+  border: 1px white solid;
+  border-radius: 50%;
+  padding:5px;
+  background-color: white; 
+}
+.block .t1{
+    margin-top: 37px;
+    font-size: 33px;
+}
+
+
+
+
+.container7{
+    background-image: url(https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/b1.jpg);
+    height: 90vh;
+    justify-content: center;
+
+}
+
+.fatherbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container7 .boxes{
+    width: 25%;
+    height: 560px;
+    background-color: white;
+}
+
+
+.container7 .boxes .boximage{
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px 10px;
+    text-align: left;
+}
+
+
+
+.container7 .boxes .boximage img{
+    width: 100%;
+}
+.container7 .boxes .box{
+    display: flex;
+    margin:20px 10px;
+    flex-direction: column;
+    padding:2rem 3rem;
+    position: relative;
+    height: 50%;
+
+}
+.container7 .boxes .box .date{
+    display: flex;
+    flex-wrap: wrap;
+
+    position: absolute;
+    bottom: 3%;
+}
+
+.container7 .boxes .box h3{
+    color: #a3c963;
+    margin-bottom: 20px;
+}
+
+.container7 .boxes .box h1{
+    font-size: 20px;
+    margin: 5px ;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.container7 .boxes .box p{
+    letter-spacing: 1px;
+
+}
+
+.container8{
+    display: flex;
+    justify-content: space-around;
+
+    height: 60vh;
+    margin: auto 200px;
+}
+
+
+.container8 .box{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container8 .tndbox{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.container8 .box input{
+    width: 20rem;
+    height: 3rem;
+}
+.container8 .box .btn{
+    background-color: aquamarine;
+    border: none;
+    width: 20rem;
+    height: 30px;
+    border-radius: 30px;
+}
+.map{
+    width: 100vw;
+    margin-top: 75px;
+    border: 5px solid grey;
+    
+ }
+ iframe{
+    width: 100%;
+    padding: 10px;
+    
+ }
+
+ .footer{
+    text-align: center;
+    height: 150px;
+    background-color: #a3c963;
+ }
+ .madeby{
+    padding-top: 30px;
+ }
+
+
+
+.footer .icons{
+    margin-top: 20px;
+
+}
+.footer .icons a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 2px;
+    background-color: black;
+}
+.footer .icons a:hover i{
+   color: rgb(160, 192, 77) !important;
+}
