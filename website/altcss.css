@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 90vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url("https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/b2.jpg");
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.Forest {
+    font-size: 2em;
+    color: #dadada;
+    font-weight: 900;
+    padding-left: 1.5em;
+    padding-top: 0.7em;
+    position: absolute;
+}
+
+.container .words a {
+    text-decoration: none;
+    color: #dadada;
+    margin: 0.5em;
+    font-size: 1.3em;
+    font-weight: 900;
+    transition: ease-in-out 0.8s;
+}
+
+.words a:hover {
+    color: rgba(62, 92, 17, 0.864) !important;
+}
+
+.container .words {
+    position: absolute;
+    right: 0.5em;
+    padding-left: 1.5em;
+    padding-top: 3em;
+}
+
+.home {
+    color: rgba(62, 92, 17, 0.864) !important;
+}
+
+.center-photo {
+    color: #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    letter-spacing: 0px;
+    padding: 0em 4em;
+    line-height: 27px;
+    text-align: center;
+    margin: auto 20%;
+}
+
+.center-photo h2 {
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+}
+
+.button {
+    display: flex;
+    position: absolute;
+    width: 15rem;
+    justify-content: space-between;
+    bottom: 10rem;
+    left: 39rem;
+}
+
+.button button {
+    width: 8em;
+    height: 3rem;
+    border-radius: 40px;
+    border: 0.3em solid white;
+    transition: ease-in-out 0.5s;
+    background-color: #a3c062;
+}
+
+.aboutus {
+    background-color: #ffffff !important;
+    text-decoration: none;
+    color: #a3c963;
+}
+
+.button button:hover {
+    color: white;
+    background-color: black !important;
+}
+
+.about {
+    font-family: 'Playfair Display', serif !important;
+    position: relative;
+}
+
+.about .top {
+    text-align: center;
+}
+
+.about .top h3, .about .top h2 {
+    margin-top: 1.7rem;
+}
+
+.about .top p {
+    margin: auto 20rem;
+    margin-top: 0.5rem;
+}
+
+.about .top h3 {
+    color: #a3c062;
+}
+
+.about .top h2 {
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about .top p {
+        margin: auto 2rem;
+    }
+
+    .center-photo {
+        padding: 0em 2em;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+        bottom: 5rem;
+    }
+}

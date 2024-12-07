@@ -7,63 +7,51 @@
     width: 100vw !important;
     overflow-x: hidden;
 } */
-.container {
+.container{
     height: 90vh;
-    width: 100%;
-    background-size: cover;
+    width: 100vw;
+    background-size: 100%;
+    display: flex;
     background-repeat: no-repeat;
-    position: relative;
     background-image: url("https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/b2.jpg");
+    position: relative;
+}
+.container img{
+    width: 100%;
+    height: 100%;
 }
 
-.Forest {
-    font-size: 2rem;
+.Forest{
+    font-size: 2em;
     color: #dadada;
-    font-weight: bold;
+    font-weight: 900;
+    padding-left: 1.5em;
+    padding-top: 0.7em;
     position: absolute;
-    top: 1rem;
-    left: 1.5rem;
 }
-
-.words a {
+.container .words a{
     text-decoration: none;
     color: #dadada;
     margin: 0.5em;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.3em;
+    font-weight: 900;
     transition: ease-in-out 0.8s;
 }
-
-.words a:hover {
-    color: rgba(62, 92, 17, 0.864) !important;
+.words a:hover{
+    color:rgba(62, 92, 17, 0.864) !important;
 }
 
-.center-photo h2 {
-    color: #fff;
-    font-weight: lighter;
+.container .words{
+    position: absolute;
+    right: 0.5em;
+    padding-left: 1.5em;
+    padding-top: 3em;
+    
 }
 
-.button button {
-    width: 100%;
-    height: 3rem;
-    border-radius: 40px;
-    border: 0.3em solid white;
-    transition: ease-in-out 0.5s;
-    background-color: #a3c062;
-    color: black;
-}
-
-.button button:hover {
-    background-color: black;
-}
-
-.aboutus {
-    background-color: #ffffff !important;
-    color: #a3c963;
-}
-
-.home {
-    color: rgba(62, 92, 17, 0.864) !important;
+/* color for home icon */
+.home{
+    color: rgba(62, 92, 17, 0.864) !important; 
 }
 
 /* for texts around the home picture */
@@ -106,7 +94,8 @@
 }
 .aboutus{
     background-color: #ffffff !important;
-    color:#a3c963
+    text-decoration: none;
+    color:#a3c963;
 }
 .button button:hover{
     color: white;
@@ -185,6 +174,17 @@
 
 
 }
+
+.top_service {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .top_service {
+    flex-direction: row;
+  }
+}
 .container2 .top{
     display: flex;
     margin:1rem 10rem 1rem;
@@ -194,6 +194,8 @@
 }
 .container2 .top .left_box{
     width: 48%;
+    color: rgb(15, 28, 30);
+    text-align: right;
 }
 .container2 .top .right_box{
     padding-top: 0;
@@ -221,7 +223,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.8s;
-    
+
 }
 .container2 .box .b{
     width: 27%;
@@ -233,7 +235,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+    box-shadow: 0 0 10px rgb(0, 0, 0);
    
 }
 .container2 .box .b:hover{
@@ -263,6 +265,16 @@
     
 }
 
+/* for mobile view */
+@media (max-width: 768px) {
+    .box {
+      flex-direction: column; /* Stack the boxes vertically */
+    }
+  
+    .b {
+      width: 100%; /* Make each box full width */
+    }
+  }
 /* for eords after text */
 .container3{
     flex-direction: wrap;
