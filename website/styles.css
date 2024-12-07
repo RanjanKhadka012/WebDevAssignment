@@ -7,50 +7,63 @@
     width: 100vw !important;
     overflow-x: hidden;
 } */
-.container{
+.container {
     height: 90vh;
-    width: 100vw;
-    background-size: 100%;
-    display: flex;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-}
-.container img{
-    width: 100%;
-    height: 100%;
+    background-image: url("https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/b2.jpg");
 }
 
-.Forest{
-    font-size: 2em;
+.Forest {
+    font-size: 2rem;
     color: #dadada;
-    font-weight: 900;
-    padding-left: 1.5em;
-    padding-top: 0.7em;
+    font-weight: bold;
     position: absolute;
+    top: 1rem;
+    left: 1.5rem;
 }
-.container .words a{
+
+.words a {
     text-decoration: none;
     color: #dadada;
     margin: 0.5em;
-    font-size: 1.3em;
-    font-weight: 900;
+    font-size: 1rem;
+    font-weight: bold;
     transition: ease-in-out 0.8s;
 }
-.words a:hover{
-    color:rgba(62, 92, 17, 0.864) !important;
+
+.words a:hover {
+    color: rgba(62, 92, 17, 0.864) !important;
 }
 
-.container .words{
-    position: absolute;
-    right: 0.5em;
-    padding-left: 1.5em;
-    padding-top: 3em;
-    
+.center-photo h2 {
+    color: #fff;
+    font-weight: lighter;
 }
 
-/* color for home icon */
-.home{
-    color: rgba(62, 92, 17, 0.864) !important; 
+.button button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 40px;
+    border: 0.3em solid white;
+    transition: ease-in-out 0.5s;
+    background-color: #a3c062;
+    color: black;
+}
+
+.button button:hover {
+    background-color: black;
+}
+
+.aboutus {
+    background-color: #ffffff !important;
+    color: #a3c963;
+}
+
+.home {
+    color: rgba(62, 92, 17, 0.864) !important;
 }
 
 /* for texts around the home picture */
@@ -598,7 +611,7 @@
 
 .block{
 width: 100%;
-height: 20vh;
+height: 25vh;
 background-color: rgb(160, 192, 77);
 text-align: center;
 }
@@ -679,7 +692,7 @@ text-align: center;
     margin-bottom: 10px;
 }
 
-.container7 .boxes .box p{
+.container7 .boxes .box p {
     letter-spacing: 1px;
 
 }
