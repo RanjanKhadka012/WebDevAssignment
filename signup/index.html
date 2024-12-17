@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div class="parent-div">
+    
+    <div class="vertical-section-holder">
+        <section class="vertical-section-1"></section>
+        <section class="vertical-section-2">
+            <div class="login-signup-holder">
+                <div class="forms">
+                    <form class="login-form">
+                        <h2 class="heading-text">Login</h2>
+                        <input type="email" id="loginEmail" placeholder="Email"/>
+                        <input type="password" id="loginpwd" placeholder="Password"/>
+                        <button type="submit" id="login">Login</button>
+                        <p class="message">Not registered? <a href="#">Signup</a></p>
+                    </form>
+                    <form class="register-form" id="register-form">
+                        <h2 class="heading-text">Sign Up</h2>
+                        <input type="text" id="fname" placeholder="User Name" required/>
+                        <p class="errors" id="error1"></p>
+                        <input type="email" id="email" placeholder="Email" required/>
+                        <p class="errors" id="error5"></p>
+                        <input onkeyup="trigger()" type="password" id="password" placeholder="Password" required/>
+                        <p class="errors" id="error6"></p>
+                        <div class="indicator"><span class="weak"></span> <span class="medium"></span> <span
+                                class="strong"></span></div>
+                        <div class="strength"></div>
+                        <input type="password" id="cpassword" placeholder="Confirm Password" required/>
+                        <p class="errors" id="error7"></p>
+                        <button type="submit" id="signUp"> Sign up</button>
+                        <p class="message">Already registered? <a href="#">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+</body>
+</html>

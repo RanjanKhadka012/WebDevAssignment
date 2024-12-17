@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    object-fit: contain;
 }
 /* body{
     width: 100vw !important;
@@ -15,6 +16,14 @@
     background-repeat: no-repeat;
     background-image: url("https://p.w3layouts.com/demos_new/template_demo/17-12-2018/forest-demo_Free/2069386206/web/images/b2.jpg");
     position: relative;
+}
+
+@media(max-width: 768px){
+    .container{
+        background-size: cover;
+        background-image: none;
+        color: black;
+    }
 }
 .container img{
     width: 100%;
@@ -75,13 +84,24 @@
     letter-spacing: 0.1em;
     font-weight: lighter;
 }
+@media (max-width: 768px){
+    .center-photo{
+        color: black;
+    }
+    .center-photo h2{
+        color: black;
+    }
+    .aboutus{
+       background-color: #a3c062;
+    }
+    
+}
 .button{
     display: flex;
-    position: absolute;
+    font-weight: bolder;
     width: 15rem;
     justify-content: space-between;
-    bottom: 10rem;
-    left: 39rem;
+
 
 }
 .button button{
@@ -106,6 +126,9 @@
     /* text-align: center; */
     font-family: 'Playfair Display', serif !important;
     position: relative;
+    /* background-image: url("https://www.plantingtree.com/cdn/shop/articles/evergreen_shrubs.jpg?v=1589991819"); */
+    background-size: cover;
+    background-position: center;
 }
 .about .top{
     text-align: center;
@@ -115,8 +138,9 @@
 } 
 
 .about .top p{
-    margin: auto 20rem;
+    margin: auto;
     margin-top: 0.5rem;
+    width: 80vw;
 }
 
 .about .top h3{
@@ -132,17 +156,26 @@
     margin-top: 10rem;
     justify-content: center;
     position: relative;
+    flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .bottom .img{
     display: block;
 }
+
+.bottom .p{
+
+    width: 75vw;
+}
 .bottom .words{
     display: flex;
-    height: auto;
-    flex-direction: column;
-    margin-left: 2rem;
-    width: 40%;
+  height: auto;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
 }
 .bottom .words h3{
     color: #a3c062;
@@ -167,35 +200,48 @@
 .container2{
     width: 100vw;
     height: 78vh;
-}
-
-.container2{
     background-image: url(media/s1.jpg);
-
-
 }
+
+
 
 .top_service {
   display: flex;
-  flex-direction: column;
+ 
+}
+@media(max-width: 768px) {
+    .container2 .top {
+      
+      margin: auto;
+    }
+    .top_service {
+    flex-direction: column-reverse;
+  }
+  .right_box h2{
+    text-align: center;
+  }
+  .left_box{
+    /* width: 100vw; */
+  }
+  .left_box p{
+    text-align: center;
+    width: 80vw;
+  }
+    
 }
 
-@media (min-width: 768px) {
-  .top_service {
-    flex-direction: row;
-  }
-}
 .container2 .top{
     display: flex;
-    margin:1rem 10rem 1rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: white;
 }
 .container2 .top .left_box{
-    width: 48%;
+    width: 43%;
     color: rgb(15, 28, 30);
     text-align: right;
+    margin-right: 2rem;
+    padding-left: 2rem;
 }
 .container2 .top .right_box{
     padding-top: 0;
@@ -236,7 +282,12 @@
     align-items: center;
     text-align: center;
     box-shadow: 0 0 10px rgb(0, 0, 0);
-   
+}
+@media(max-width: 768px){
+    .container2 .box .b{
+        width: 80%;
+    }
+    
 }
 .container2 .box .b:hover{
     background-color: rgb(202, 202, 202);
@@ -305,16 +356,6 @@
 
 
 
-.vertical_line{
-    height: 25vh;
-    margin-top: 3rem;
-    width: 100vw;
-    background-color: greenyellow;
-}
-
-
-
-
 /* The green vertical line */
 .vertical_line{
     width: 100%;
@@ -323,9 +364,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-    
-   
+    height: 25vh;
+    margin-top: 3rem;
+    width: 100vw;
+    background-color: greenyellow;
+    position: inherit;
 }
 .vertical_line .part{
    display: flex;
@@ -520,13 +563,14 @@
     justify-content: center;
     width: 90px;
     margin-top: 28px;
-    margin-left: 70px;
+    text-align: center;
     line-height: 29px;
     color: rgb(156, 156, 156);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
     font-size: 13px;
     letter-spacing: 1px;
+    margin:auto;
 }
 .boxes button{
     height: 40px;
@@ -653,13 +697,27 @@ text-align: center;
 .fatherbox{
     display: flex;
     justify-content: space-evenly;
+    
 }
-
-.container7 .boxes{
+@media(max-width: 768px){
+    .fatherbox {
+        flex-direction: column;
+        width:100%;
+    }
+}
+@media(max-width: 768px){
+    .container7 .fatherbox .boxes {
+        width:100%;
+    }
+}
+.container7 .boxes {
     width: 25%;
-    height: 560px;
+    height: 34rem;
     background-color: white;
-}
+  
+    /* For mobile view */
+    
+  }
 
 
 .container7 .boxes .boximage{
