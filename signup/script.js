@@ -121,19 +121,16 @@ signUpBtn.addEventListener("click", function (e) {
     firstName: FName.value,
     email: Email.value,
     password: Pass.value,
-    // Add other relevant fields as needed
+
   };
 
     
   
-      try {
+// store in local storage
         localStorage.setItem("user", JSON.stringify(userData));
         alert("Signup successful! You can now log in.");
         signupForm.reset();
-      } catch (error) {
-        console.error("Error saving to localStorage:", error);
-        alert("There was a problem saving your data. Please try again.");
-      }
+      
 
   // Display success message or redirect (optional)
   alert("Registration successful! Please proceed to login.");
